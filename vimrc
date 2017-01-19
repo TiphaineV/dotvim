@@ -296,13 +296,13 @@ vnoremap <leader>g "gy<Esc>:call GoogleSearch()<CR>
 " better <ESC> (to go back to normal mode from insert mode)
 inoremap jk <ESC>
 inoremap kj <ESC>
-inoremap <ESC> <nop>
+"inoremap <ESC> <nop>
 
 " switch semi-colon and colon
-nnoremap ; :
-vnoremap ; :
-nnoremap : ;
-vnoremap : ;
+"nnoremap ; :
+"vnoremap ; :
+"nnoremap : ;
+"vnoremap : ;
 
 " insert the very magic reg-ex mode every time
 set hlsearch incsearch
