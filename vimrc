@@ -549,3 +549,12 @@ endfunction
 
 vnoremap <c-g> <ESC>:call Send_select_to_last_pane()<CR>
 nnoremap <c-g> vaw<ESC>:call Send_select_to_last_pane()<CR>
+
+
+" For mutt
+set spelllang=fr
+
+augroup MUTT                                                                    
+au BufRead ~/.mutt/temp/mutt* set spell " <-- vim 7 required                    
+au BufRead ~/.mutt/temp/mutt* set nonu                                          
+augroup END   
